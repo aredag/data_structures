@@ -1,21 +1,17 @@
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
-
-public class ArraysData : MonoBehaviour
+public class ArraysDataSimple : MonoBehaviour
 {
-    [SerializeField] int _valueToSearch;
     [SerializeField] TMP_InputField _inputField;
 
     int[] _intArray = new int[100];
     int _nElemts = 0;
     int _jCounter;
 
-
     void Start()
     {
         _nElemts = _intArray.Length;
-        
 
         FillArray();
     }
